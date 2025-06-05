@@ -1,0 +1,15 @@
+main:
+  params: [ input ]
+  steps:
+  - ejecutarPruebas:
+      call: http.post
+      args:
+        url: https://wdio-tests-service-538282289270.us-central1.run.app
+        headers:
+          Content-Type: application/json
+        body:
+          trigger: "manual"
+      result: respuesta
+
+  - devolverResultado:
+      return: ${respuesta.body}

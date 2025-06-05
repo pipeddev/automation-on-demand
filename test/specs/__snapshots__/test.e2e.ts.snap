@@ -1,0 +1,7 @@
+// Snapshot v1
+
+exports[`My Login application > should login with valid credentials > flashAlert 1`] = `
+"<div data-alert="" id="flash" class="flash success">You logged into a secure area!
+  <a href="#" class="close">×</a>
+</div>"
+`;
